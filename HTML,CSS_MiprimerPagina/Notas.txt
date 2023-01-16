@@ -1,0 +1,514 @@
+el !DOCTYPE html significa que le estoy pasado la configuracion de html 5 
+
+La etiqueta <html lang `es`> es para decir en qeu idioma en que esta construyendose 
+nuestro programa 
+Se agrego las etiquetas body que son para el cuerpo del trabajo, la etiqueta head que es
+para la cabeza del trabajo. 
+Para hacer zoom es control ++ en caso contrario control --
+
+Se acostumbra colocar las etiquetas de contenido en el body y las etiquetas de 
+informacion en el body
+
+Cuando se escribe el css dentro del mismo html se llama la metodologia inline donde
+se define la propiedad en cada una de las lineas. 
+
+Otra metodologia es cuando dentro de la etiqueta head se agrega el style y desde ahi
+se usa ejemplo 
+<style>
+    p{
+        text-align: center;
+     }
+</style>
+
+La otra opcion y la mejor en mi opinion es crear un nuevoa rchivo, con la extension css
+donde ahi se apliquen todos los estilos mediante css para eso hay que vincular el 
+archivo css dentro del index o de todos los documentos html que tengamos. 
+
+
+Los colores en CSS se pueden representar en hexadecimal, RGB y con los nombres de los
+colores. 
+
+EQUIPO FRONTED 
+Programador Front End
+Responsable por UX(use Experience)
+Responsable por UI(User Interface)
+Copywriter(Generado de contenido)
+SEO(Search Engine Optimization)
+
+Se necesita dominar algunos lenguajes y ciertas cosas comoo..
+
+Programador FRONTED
+HTML 
+CSS
+JavaScript
+Diseño Responsive
+Optimizacion del Rendimiento
+Testeo
+
+Responsable por Ux/UI design se le conoce como el diseñador de las interfaces y trabaja
+muy de la mano con el Programador
+
+Copywriter(generador de contenido) y SEO(Search Engine Optimization) estrategias
+para que los motores de busqueda puedan encontar nuestra pagina, en pocas palabras
+que seamos visibles a traves de la web. 
+
+
+Para listas no ordenas se utiliza la eiqueta <ul></ul> a continuacion un ejemplo.
+
+NOTA el identificador es unico solo se puede utilizar una vez mientraas que las clases
+nos permite reutilizar ese estilo.
+
+La propiedad CSS padding establece el espacio de relleno requerido por todos los lados
+de un elemento.
+
+La etiqueta <nav></nav> se agrego desde html5 y sirve para agregar
+una barra de navegacion en la pagina
+
+En CSS se utiliza lo siguiente para convertir en mayusculas las
+letras 
+        text-transform: uppercase;
+Para resaltar en negritas el texto en CSS se utiliza de la 
+siguiente manera 
+        font-weight: bold;
+Para los margenes utilizamos la siguiente propiedad en CSS
+          margin: 0 0 0 15px;
+Este sirve para darle un margen,el primer margen hacia arriba,
+el segundo a la derecha, el tercero para la parte de abajo y el 
+ultimo para la izquierda 
+
+Posicionamiento 
+position: static; Esta es la posicion que por default tenemos en 
+nuestra pagina.
+
+position: relative; Esta propiedad le dice al navegador que en 
+funcion a la posicion actual donde esta comenzado , se puede alterar
+la posicion del menu 
+
+position: absolute; Esta propiedad va a ser absoluta en funcion de los
+valores que uno defina
+
+La etiqueta <div></div> es una etiqueta que nos ayuda a crear 
+bloques
+
+En CSS la propiedad width es para darle ancho
+
+LA MEJOR TECNICA PARA ALINEAR UNA DIV AL CENTRO 
+Para esto usar el calculo de margin automatico, delegamos para que 
+el navegador haga la cuenta al calcular la largura restante, dividir 
+entre dos y agregar la mitad en cada uno de los lados
+
+REFORZANDO INLINE-BLOCK
+Pagina buena para aprender el w3schools.com
+
+¿Cómo se comporta un elemento que tiene su display con el 
+valor inline-block?
+
+Pudiendo ajustar el tamaño de su contenido , dejandolo regulabre, el 
+tamaño puede ser ajustado, tanto en lo largo,como en la altura
+
+¿Cuál es el comportamiento del elemento cuando agrego espaciamiento 
+interno, el padding?
+
+El elemento aumenta su tamaño, cuando declaro que existe un 
+espaciamiento interno, estoy aumentando el contenido. 
+
+¿Cuando agrego la siguiente declaración de borde:?
+            border: 3px solid #000000;
+
+El comportamiento esperrado es un borde solido, con 3 pixeles de
+ancho entre el padding y el margin
+
+BORDES 
+Para los bordes tenemos la propiedad border-radius: 10px;
+este le dara estilo al borde de nuestro contentido
+
+Perooo, hay otras maneras de hacerlo, en la cual podemos editar
+cada una de las esquinas del rectangulo a continuacion el codigo
+
+border-top-left-radius: 10px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 40px;
+border-bottom-left-radius: 50px;
+OTRA MANERA EVITANDO TANTAS LINEAS ES 
+
+border-radius: 10px 25px 40px 50px ; 
+este reemplaza a los 4 anteriores*/
+
+
+La propiedad hover sirve para capturar el comportamiento del movimiento
+del mouse de nuestro usuario
+
+Con la propiedad active para capturar el click de la pagina
+
+
+¿Cuándo podemos usar el comportamiento del hover en un elemento?
+Cuando queremos resaltar alguna caracteristica en el momento en el que
+el mouse del usuario este por encima del elemento., en el hover 
+mapeamos el comportamiento del mouse por encima del elemento,y 
+podemos usar esto para descartar visualmente el elemento. 
+
+
+Para agregar en el background una imagen se usa de la siguiente
+manera
+                background: url(imagenes/bg.jpg);
+
+¿Qué tipo de caracteres especiales podemos usar en nuestro texto?
+Podemos utilizar cualquier caracter del Unicode
+
+Funcionamiento de formularios.
+Para decidir cuándo debemos utilizar un formulario en nuestras páginas,
+se pueden analizar algunos motivos:
+
+1) Cuando queremos enviar datos a un servidor
+
+2) Cuando queremos capturar información que el usuario escribe
+
+3) Cuando queremos enviar los datos a otra página
+
+
+En HTML para crear un fomrulario se usa la etiqueta 
+<form></form>
+
+dentro de esta para que se vea referenciado un texto se utiliza 
+<labela for="nombreapellido">Nombre y Apellido</label>
+
+y para hacer el cuadrito donde el usuario pueda escribir se hace asi
+<input type="text" id=nombreapellido">
+
+¿Qué propiedad debo cambiar para que mi <input> tenga un espacio 
+entre el borde y el contenido?
+
+La propiedad padding sirve para cambiar el espaciado interno, entre 
+el contenido y el borde
+
+La etiqueta   <textarea name="" id="mensaje" cols="70" rows="10"></textarea>
+sirve apra generar un cuadro de texto en nuestra pagina, cols es columnas, rows es filas
+
+La etiqueta  <input type="radio"> genera un circulo de opcion para la pagina web
+
+
+¿Cuál es la propiedad de un input del tipo radio que necesito crear para que todos 
+los elementos formen parte del mismo grupo?
+
+La propiedad name solo se puede "completar" una vez, es por eso que, cuando seleccionamos
+uno de los items, se anula el otro, manteniendo solamente uno seleccionado.
+
+
+¿Cuál es el mejor enfoque cuando tenemos una configuración de CSS aplicada a un 
+ítem y queremos replicarla en un ítem similar?
+
+Para eso tenemos dos opciones, la primera es crear una clase, cuando tenemos un estilo
+que puede ser repetido, una buena estrategia es extraer eso a una clse y usar la clase
+para aplicar esos estilos en nuestros elementos.
+
+La otra opcion es usar selectores de items separados por coma, es una forma sencilla que
+la misma configuracion de CSS funcione para los dos items, ya sean selectores de 
+elementos, de ids o de clase.
+
+Existe una jerarquia y orden en CSS
+Para esto es necesario pensar en tres cajas
+La primera caja es ID y vale 100
+La segunda caja es class y vale 10
+La tercera caja es etiqueta y vale 1
+La cuarta caja es inlene(dentro del html) y vale 1000
+
+Entonces un ejemplo seria 
+form p = 1 + 1 = 2
+p = 1
+
+.test = 10
+
+p.test = 1 + 10 = 11
+
+#test = 100
+
+Algo que tendria mas peso seria usar las configuraciones inline , pero no es considerado
+una buena practica de programacion.
+
+
+En el último video, se vio la etiqueta <option>. ¿Cuál es su utilidad?
+
+La estructura de la etiqueta <select> esta compuesta de uno o mas <option>
+
+
+¿Por qué motivos es importante usar los tipos correctos de <input> 
+para los usuarios que acceden a la página vía celular?
+
+Para tener datos ams correctos en el formulario, y para facilitar la
+vida del usuario.
+
+Es importante al  momento de usaar formularios, en el codigo pongamos la etiqueta
+required , para que al momento de que el usario llene el formualrio y le llegase a faltar 
+algo del formulario , le aparezca el mensaje que debe de llenar todos los campos.
+
+
+¿Cómo convertimos un campo común en un campo obligatorio?
+
+Agregando la propiedad required , el navegador nos ayuda a validar si ese campo esta 
+rellenado.
+
+La etiqueta <fieldset></fieldset> sirve para agrupar items que pertencen al mismo grupo 
+
+Es importante en las etiquetas que contengan imagenes, agregar un texto alternativo
+
+
+¿Qué etiqueta usamos para marcar un título de un grupo de campos en el formulario?
+
+La etiqueta <legend> es la que usamos para un titulo de un grupo de campos en cualquier 
+formulario.
+
+Que son las transiciones?
+
+¿Cómo configurar la transición visual de un elemento que dura 3 segundos?
+
+En CSS con la propiedad transition se le puede agregar un tiempo a la transicion para 
+proporcionar una transicion visual de un elemento. 
+
+ESTA propieda en CSS en la parte donde esta el hover del final, ayuda a que como lo dice
+tranforma cuando pasa el click luego aumenta su escala 
+transform: scale(1.2);
+
+
+¿Qué propiedad del CSS usamos para aumentar un elemento proporcionalmente?
+Usamos la propiedad transform: scale() para aumentar un elemnto proporcionalmente
+
+Construir tablas 
+
+Etiqueta  
+        <table> Esto para crear la tabla.
+                <tr>
+                    <td> Celdas de las tablas
+                        
+                    </td>
+                </tr> Lineas de las tablas
+            </table>
+
+¿Qué etiqueta uso para crear filas en una tabla?
+Se utilizaz la etiqueta <tr>
+
+Las tablas pueden ser estructuradas igual de la fomra que tenemos un header, un footer
+y asi con la etiqueta <thea></thead> para el titulo.
+
+Tambien existe una etiqueta para las celdas del encabezado que se llama <th>
+
+Asi como tenemos un <thead> tambien tenemos en <tbody>
+
+¿Cómo dividir una tabla de una forma más semántica?
+
+Las etiquetas <thead>, <tbody> y <tfoot> ayudan a dejar el contenido de la tabla más
+dividido y más semántico.
+
+La etiqueta <section> </section> sirve para dividir nuestro contenido por secciones de 
+forma semantica 
+
+¿Cuál es la diferencia entre usar una <div> o una <section>?
+
+Debemos usar la etiqeuta <section> cuando el bloque es semantico, para un bloque donde
+el contenido tiene el mismo significado, el mimso sentido, usamos una <section>
+
+
+Usamos id en html cuando queremos alterar comportamientos. 
+
+En css en font-size: 2em; el em multiplicara por dos el tamaño pàdron de nuestro navegador
+por ejemplo se tiene un tamaño padron de 15 px entonces, cuando esta propiedad este 
+se multiplicara por 2 el 15 dando como resultado un tamaño de 30 px 
+
+
+Al crear cualquier estilo, ¿Cuál es el mejor padrón para marcar nuestro contenido al 
+crear una clase?
+
+Ser especifico y generico al mismo tiempo, un balance es la mejor alternativa, no tan 
+especifico, para poder repetir o utilizar las calses y no tan generico, para que no 
+se tenga que necesitar combinar clases
+
+La propiedad float es como si la iamgen se despegara de la pagina , pero deja una sombra
+y esa sombra es ocupada por la misma proporcion 
+
+
+¿Para qué sirve la propiedad float?
+
+Colocar el elemento en la lateral de nuestra pagina y dejar los otrros elementos alrededor
+de el. Tanto, el float:left como el float:right sirven para que el elemento se destaque
+en la pantalla, la superficie de elementos continua siendo utilizada y los otros elementos
+de texto o elementos en linea se posiciones alrededor de el. 
+
+
+Algunos beneficios de usar fuentes externas.
+
+Analice los siguientes beneficios de usar fuentes externas:
+
+Estandarizar nuestro contenido en todos los navegadores
+Dejar el sitio más bonito, fuera de lo común
+Tener más alternativas de fuentes
+
+La etiqueta <iframe> sirve para crear como ventanas, espacios,areas en las cuales se 
+pueden colocar diferentes tipos de contenido, imagenes, videos, gifs , etc.
+
+
+¿Para qué sirve la etiqueta iframe?
+La etiqueta <iframe> sirve para insertar diferentes elementos externos como ser 
+imagenes, videos, mapas o hasta una pagina de facebook o twitter
+
+
+¿Cuáles de las siguientes sentencias son verdaderas en relación a la incorporación
+de vídeos externos en nuestra página?
+
+Se pueden configurar desde tiempo especifico del video queremos que se empiece a reproducir
+y se usa la etiqeuta iframe para incrustar videos
+
+
+PSEUDOCLASES.
+Para no tener que estar acordadnose de ocmo se hicieron ciertos cambios y como buena 
+practica de programacion se usan las pseudoclases , ejemplo
+
+.items:first-child{
+    font-weight: bold;
+}
+Este pondra en negritas nuestro primer item, en un caso que si querriamos que el ultimo
+item fuera con negritas seria asi
+
+.items:last-child{
+    font-weight: bold;
+}
+Una ventaja que se tiene es usar el nth.child, por que podemos indicarle el numero , en
+orden creciende de cual item queremos que se pinten en negritas, por ejemplo queremos
+nuestro tercer item
+
+.items: nth-child(3){
+    font-weight: bold;
+}
+Un truco para que solo los items pares se pinten seria asi
+
+.items: nth-child(2n){
+    font-weight: bold;
+}
+
+APLICANDO GRADIANTES 
+Para poderlos aplicar debemos seleccionar el bloque que queramos usando nuestras clases
+en nuestro codigo html, despues en CSS aplicarlo de la siguiente manera.
+
+        /* hace el color tome un gradiante  */
+        background:linear-gradient(#088c19,blue);
+Esto indica que ba a ir del color verde, degradando hasta el azul
+Tambien esta propiedad en CSS nos permite trabajr con angulos por ejemplo
+
+        background:linear-gradient(45deg,#088c19,blue);
+
+Se puede hacer sin la necesidad del background:linear-gradient(#088c19,blue);
+usando de la siguiente manera
+        background:radial-gradient(45deg,#088c19,blue);
+
+
+PSEUDOELEMENTOS.
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+Esto es para resaltar la primer letra
+
+En un ejemplo en el que querramos poner corchete a nuestros titulos solo al inicio y al 
+final seria de la siguiene manera.
+
+        .titulo-principal:before{
+                content: "{"
+        }
+        .titulo-principal:after{
+                content: "}"
+        }
+
+¿Cómo creo un pseudo-elemento usando CSS que anteceda a un elemento de HTML?
+
+Para hacer esto necesitamos, crear un elemento en la pagina,via CSS antes del elemento
+HTML , y usamos la propiedad :before 
+
+
+SELECTORES AVANZADOS
+
+Un ejemplo creamo en en html dentro de la etiqueta main un <p> y ponemos lo que queramos
+en ese parrafo, luego en css ponemos
+
+main > p{
+        background: red;
+}
+Esto hara que seleccione solo los parrafos que son hijos del main,osea la sintaxis es
+elemento > hijo 
+
+
+img + p este ejemplo se explcia asi esto seleccionara el parrafo que viene despues de la
+imagen y osea estan en el mimso nivel y seleccionarme el primer parrafo que viene despues
+de la imagen y aplicale un color distinto
+
+img + p {
+        background: yellow;
+}
+
+
+<h2>
+<section>
+    <h2>
+    <p>
+    <p>
+    <h2>
+</section>
+¿Cómo hacemos para seleccionar el último <h2> ?
+
+Para eso debemos analizar que el h2 es hijo directo de la section y hermano del p 
+entonces 
+
+section > p + h2
+
+
+Cálculo con CSS
+CHECAR EL USO DE LA FUNCION CALC EN CSS PARA PODER REPASAR MEJOR. 
+
+¿Cómo usar medidas proporcionales para dejar un elemento 100% de ancho con el 
+equivalente a un tercio del elemento padre, menos 10px?
+
+Es necesario calcular el un tercio del elemento, esa es una de las formas de hacer eso, 
+luego le restamos los 10px 
+En codigo quedaria asi
+width: calc( (100% / 3) - 10px )
+
+¿Cuáles tipos de elementos pueden recibir una capa de opacidad?
+Todos los elementos y todos los colores pueden tener una capa de opacidad.
+Propiedad opacity hace que le de esa idea de opacidad a la imagen o texto que querramos 
+que se modifique
+
+Opacidad 
+box-shadow: 10 px  10px para darle sentido es en sentido horario. black;
+ayuda a darle una sensacion de opacacidad, y en mi opinion como brillosa, una sombra
+
+Una gran herramienta para las sombras es box-shadow-css mozilla 
+
+
+¿Cómo hacer una sombra interna en un elemento?
+
+Alternativa correcta! Sombra interna, negra, con una extensión de 5px.
+                box-shadow: inset 0 0 5px black;
+
+
+Meta tag de Viewport
+¿Cómo marcar un elemento para que se presente de otra manera a través de una 
+condición, en una pantalla de hasta 480px?
+
+Dentro de esta media query podemos crear un estilo visual que incluye pantallas hasta
+480 px
+                @media (max-width: 480px) {}
+
+
+
+NOTAAAAA RESPONSIVE 
+
+¿Cuál es la principal táctica para no perder mucho tiempo creando layouts responsivos?
+Usar medidas proporcionales para todo,hoy en dia la mejor forma de crear cualquier 
+contenido
+Crear un layout fluido que se adapte siempre, es una amnera perfecta de evitar la 
+repeticion de trabajos.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,282 @@
+body{
+    /* esto es para el tipo de letra de la pagina con google fonts */
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /* espaciado externo*/ 
+}
+
+.caja{
+    width: 940px;
+    position: relative; /*Posicion relativa a la posicion absoluta definida anteriormente */
+    margin: 0 auto;
+    padding: 20px 0;
+}   
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*Este sirve para darle un margen,el primer 
+    margen hacia arriba, el segundo a la derecha, el tercero para 
+    la parte de abajo y el ultimo para la izquierda */
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background: #CCCCCC;   
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* border:2px groove #000000; es lo mismo que las 3 lineas de abajo
+    solo que esta es una manera de simplificar, es importante el orden
+    el cual seria,el ancho del borde, el estilo del borde y el tercer
+    es el color  */
+    border-color: #000000; /*Color del Borde*/
+    border-width: 2px; /*Ancho del borde*/
+    border-style: groove;
+    /* border-radius: 10px; manera clasica de poner bordes*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 50px;
+    /* border-radius: 10px 25px 40px 50px ; este reemplaza a los 4 anteriores*/
+}
+
+.productos li:hover{ /* para detectar el cursor y que cambie de color el borde*/
+    border-color: red;
+}
+
+.productos li:active{/* para detectar el click y que cambie de color el borde*/
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 35px ;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*la etiqueta hover sirve para capturar el comportamiento del movimiento
+del mouse de nuestro usuario esto esta en el home y hace que al acercar 
+el mouse cambie de color*/
+nav a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 30px;
+}
+.pie-pagina{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+/* CONTACTO */
+/* main{
+    estaba aqui el main con estas propiedades
+    width: 940px;
+    margin: 0 auto;
+} */
+form{
+    margin: 40px 0;
+}
+/* esto hace que se vean escalonados el formulario */
+form label, form legend{
+    display: block; 
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+/* esta parte hace que el boton de enviar formulario quede abajo 
+y no a lado como estaba sin el display block */
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0 ;
+}
+.enviar{
+    width: 40%;
+    padding:15px 0 ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    /*transition permite hacer transicion de forma mas lenta  */
+    transition: 1s all; /* background le cambiaba el color, ahora con el all hara lo mismo
+    solo que aplicara las transiciones en todas las propiedades. */
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkgreen;
+    /* transform:scale(1.2) aumenta el tamaño del cuadro del formulario. */
+    transform: scale(1.2); /*para poder aplicar las dos transformaciones al mismo tiempo
+    debemos ponerlas en la misma linea*/
+    /* transform: rotate(360deg); gira el boton en 360 grados */
+}
+
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+/* CSS para nuestra pagina inicial (index) */
+
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+/* con pseudoelementos pusimos la primer letra en negritas
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+/* pusimos la primer linea de los parrafos en italica */
+/* p:first-line{
+    font-style: italic;
+} */ 
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong {
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    /* float ayuda a darle ese estilo a la imagen, es como si la iamgen se despegara
+     de la pagina , pero deja una sombra y esa sombra es ocupada por la misma 
+     proporcion  */
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+.mapa{
+    padding: 3em 0;
+    /* hace el color tome un gradiante  */
+    background:linear-gradient(#FEFEFE,#888888);
+}
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+/* Este mapa lo metimos en un div para poder trabajar con el por que cambiamos el main
+y eso afecto nuestro mapa en la linea 107 del CSS */
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+.contenido-diferenciales{
+   width: 640px;
+   margin: 0 auto; 
+}
+.lista-diferenciales{
+    width: 40%;
+    /* Aqui se junto la linea de codigo del index 54, </ul><img> para que se aplicara
+    de forma correcta el css(display:inline-block) */
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    /* esta propiedad sirve como para dar un interlineado entre los elementos de la 
+    lista */
+    line-height: 1.5;
+}
+.items:before{
+    content: "🌟";
+}
+.items:first-child{ 
+    /* me agrada mas si que un solo hijo se vea afectado */
+    font-weight: bold;
+}
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 12px #000000;
+}
+.imagen-diferenciales:hover{
+    opacity: 30%;
+
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido,.contenido-diferenciales,.video{
+        width: auto;
+    }
+    .lista-diferenciales,.imagen-diferenciales{
+        width: 100%;
+    }
+}
